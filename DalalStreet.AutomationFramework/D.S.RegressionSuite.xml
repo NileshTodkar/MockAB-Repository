@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+     <listener class-name="ai.DalalStreet.Utility.ListenerSetup"/>
+     <listener class-name="ai.DalalStreet.Utility.ExtentReporterNG"/>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="ai.DalalStreet.TestLayer.LoginPageTest"/>
+      <class name="ai.DalalStreet.TestLayer.BuyShare"/>
+      <class name="ai.DalalStreet.TestLayer.GetdatafromTransactionPage"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="ai.DalalStreet.Utility.ListenerSetup"/>
+    <listener class-name="ai.DalalStreet.Utility.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="ai.DalalStreet.TestLayer.BuyShare">
+        <methods>
+          <include name="Browserclosed"/>
+          <include name="BuyShareFunctionalityWIPRO"/>
+          <include name="BuyShareFunctionalityAxis"/>
+          <include name="end"/>
+          <include name="setup"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- ai.DalalStreet.TestLayer.BuyShare -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
